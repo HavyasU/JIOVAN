@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading Please Wait</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: sans-serif;
+    }
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loading-spinner {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      animation: loading-spinner 1.5s linear infinite;
+    }
+    @keyframes loading-spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      12.5% {
+        transform: rotate(30deg);
+      }
+      25% {
+        transform: rotate(60deg);
+      }
+      37.5% {
+        transform: rotate(90deg);
+      }
+      50% {
+        transform: rotate(120deg);
+      }
+      62.5% {
+        transform: rotate(150deg);
+      }
+      75% {
+        transform: rotate(180deg);
+      }
+      87.5% {
+        transform: rotate(210deg);
+      }
+      100% {
+        transform: rotate(240deg);
+      }
+    }
+    .loading-text {
+      font-size: 18px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Please wait...</div>
+  </div>
+</body>
+</html>
