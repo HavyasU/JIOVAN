@@ -13,20 +13,25 @@ body{
     margin-top: 1.5rem;
     padding-left: 3rem;
 }
-.n-li{
+.n-ul{
     list-style: none;
     display:flex;
-    gap:3rem;
+    gap:1rem;
 }
-a{
+.n-li a{
     text-decoration: none;
     color:rgb(255, 254, 254);
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: bolder;
+    padding: 4px 9px;
+    gap: .1rem;
 }
 footer {
+  width: 100%;
     background-color: rgb(101, 97, 97);
     padding: 20px;
+    position: fixed;
+    bottom: 0;
   }
   
   .footer-container {
